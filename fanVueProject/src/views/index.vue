@@ -40,6 +40,19 @@
 				</text>	
 			</svg>
 		</div>
+
+		<!-- 沿环形路径平移的动画 -->
+	<!-- 	<div class="path">
+			<div class="avatar">
+				<img src="static/images/girl.jpeg"  alt="">
+			</div>
+		</div> -->
+		<!-- 沿环形路径平移的动画 优化 -->
+		<div class="path">
+			<img src="http://lea.verou.me/book/adamcatlace.jpg" class="avatar" />
+		</div>
+
+
 	</div>
 </template>
 <script>
@@ -103,41 +116,86 @@
 		display: block;
 		overflow: visible;
 	}
-	/*.landing{
-		height: 100vh;
-		background: url('../../static/images/bg.png') top center no-repeat;
-		background-size:cover;
+/*	<!-- 沿环形路径平移的动画 -->*/	
+/*@keyframes spin {
+	to { transform: rotate(1turn); }
+}
+
+.avatar {
+	animation: spin 10s infinite linear;
+	transform-origin: 50% 150px;
+}
+
+.avatar > img {
+	animation: inherit;
+	animation-direction: reverse;
+}*/
+
+/* Anything below this is just styling */
+
+.avatar {
+	width: 50px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.avatar > img {
+	display: block;
+	width: inherit;
+	height: 50px;
+}
+
+.path {
+	width: 300px; height: 300px;
+	padding: 20px;
+	border-radius: 50%;
+	background: #fb3;
+}	
+/*	<!-- 沿环形路径平移的动画 -->*/	
+
+/*	<!-- 沿环形路径平移的动画优化 -->*/
+
+/**
+ * Animation along a circular path - Solution 2
+ */
+ 
+@keyframes spin {
+	from {
+		transform: rotate(0turn)
+		           translateY(-150px) translateY(50%)
+		           rotate(1turn)
 	}
-	.m-download{
-		position: absolute;
-		left: 50%;
-		bottom: 150px;
-		width: 408px;
-		transform: translate(-50%,0);
+	to {
+		transform: rotate(1turn)
+		           translateY(-150px) translateY(50%)
+		           rotate(0turn);
 	}
-	.m-download img{
-		margin:0 18px;
-	}
-	.dl-btn{
-		position: relative;
-		width: 204px;
-		display: inline-block;
-		float: left;
-		cursor: pointer;
-	}
-	.qr-code{
-		position: absolute;
-		top:50%;
-		transform: translate(0,-50%);
-		width: 155px;
-		height: 155px;
-		background: url('../../static/images/qrcode.png') top center no-repeat;
-		display: none;
-	}
-	.m-android .qr-code{		
-		left:-160px;
-	}
-	.m-ios .qr-code{
-		right:-160px;
-	}*/
+}
+
+
+.avatar {
+	animation: spin 3s infinite linear;
+}
+
+/* Anything below this is just styling */
+
+.avatar {
+	display: block;
+	width: 50px;
+	margin: calc(50% - 25px) auto 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.path {
+	width: 300px; height: 300px;
+	padding: 20px;
+	margin: 100px auto;
+	border-radius: 50%;
+	background: #fb3;
+}
+/*	<!-- 沿环形路径平移的动画优化 -->*/
+
+
 </style>

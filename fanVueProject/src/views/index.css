@@ -2,3 +2,16 @@
 	width: 100%;
 	height: 2.0rem;
 }
+/*	<!-- 沿环形路径平移的动画 -->*/
+.path{
+	width: 7.5rem;
+	height: 7.5rem;
+	border-radius: 50%;
+	background: yellow;
+}
+.avatar{
+	width: 0.75rem;
+	height: 0.75rem;
+	background: url('../../static/images/girl.jpeg') no-repeat;
+	border-radius: 50%;
+}
