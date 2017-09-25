@@ -1,6 +1,6 @@
 <template>
     <div class="g-bd">
-        huiShao   有个贤惠的大嫂  日子很是滋润
+        huiShao   有个贤惠的大嫂  日子很是滋润  123312213123123123213
         <foot></foot>  
     </div>
 	       

@@ -14,7 +14,7 @@
 	       
 </template>
 <script type="text/javascript">
-    import swiper from '../../static/js/swiper.min.js'
+    import swiper from 'static/js/swiper.min.js'
     export default {
         data () {
             return {
