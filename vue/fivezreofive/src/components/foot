@@ -1,0 +1,62 @@
+<template>
+    <div>
+        <footer>
+            <ul>
+                <li class="footer-item">
+                    <a href="/depart/departure">
+                        <div class="footer-text">辉少</div>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="/depart/list">
+                        <div class="footer-text">宏少</div>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="/depart/my">
+                      
+                        <div class="footer-text">凡少</div>
+                    </a>
+                </li>
+                 <li class="footer-item">
+                    <a href="/depart/my">
+                        <div class="footer-text">坤少</div>
+                    </a>
+                </li>
+                 <li class="footer-item">
+                    <a href="/depart/my">
+                        <div class="footer-text">琦少</div>
+                    </a>
+                </li>
+                 <li class="footer-item">
+                    <a href="/depart/my">
+                        <div class="footer-text">芳少</div>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</template>
+<script type="text/javascript">
+    export default {
+        data () {
+            return {
+                
+            }
+        },
+        mounted: function () {
+            this.$nextTick(function () {
+             
+            })
+        },
+        methods:{
+           
+        },
+        components: {
+          
+        },   
+    }
+</script>
+<style>
+   
+</style>

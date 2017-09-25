@@ -19,12 +19,12 @@
         data () {
             return {
                 items:[
-                    {img:'../../static/images/weixin.png',id:1},
-                    {img:'../../static/images/car.png',id:2},
-                    {img:'../../static/images/QQ.png',id:3},
-                    {img:'../../static/images/weixin.png',id:4},
-                    {img:'../../static/images/QQ.png',id:5},
-                    {img:'../../static/images/car.png',id:6},
+                    {img:'../static/images/weixin.png',id:1},
+                    {img:'../static/images/car.png',id:2},
+                    {img:'../static/images/QQ.png',id:3},
+                    {img:'../static/images/weixin.png',id:4},
+                    {img:'../static/images/QQ.png',id:5},
+                    {img:'../static/images/car.png',id:6},
                 ]
             }
         },
