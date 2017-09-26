@@ -1,6 +1,34 @@
 <template>
     <div class="g-bd">
         fanShao  贼牛 我就是遮样的吧  
+        <div class='wow slideInLeft bounceInUp' >
+            
+        </div>
+        <div class='wow slideInRight bounceInUp' >
+            
+
+        </div>
+        <div class='wow slideInLeft bounceInUp' >
+            
+        </div>
+        <div class='wow slideInRight bounceInUp' >
+            
+
+        </div>
+        <div class='wow slideInLeft bounceInUp' >
+            
+        </div>
+        <div class='wow slideInRight bounceInUp' >
+            
+
+        </div>
+        <div class='wow slideInLeft bounceInUp' >
+            
+        </div>
+        <div class='wow slideInRight bounceInUp' >
+            
+
+        </div>
         <foot></foot>  
     </div>
            
@@ -11,18 +39,27 @@
         data () {
             return {
                 items:[
-                    {img:'../../static/images/weixin.png',id:1},
-                    {img:'../../static/images/car.png',id:2},
-                    {img:'../../static/images/QQ.png',id:3},
-                    {img:'../../static/images/weixin.png',id:4},
-                    {img:'../../static/images/QQ.png',id:5},
-                    {img:'../../static/images/car.png',id:6},
+                    {img:'static/images/weixin.png',id:1},
+                    {img:'static/images/car.png',id:2},
+                    {img:'static/images/QQ.png',id:3},
+                    {img:'static/images/weixin.png',id:4},
+                    {img:'static/images/QQ.png',id:5},
+                    {img:'static/images/car.png',id:6},
                 ]
             }
         },
         mounted: function () {
             this.$nextTick(function () {
                 let _this = this;
+                new WOW().init();
+                // let wow = new WOW({
+                //     boxClass: 'wow',
+                //     animateClass: 'animated',
+                //     offset: 0,
+                //     mobile: true,
+                //     live: true
+                // });
+                // wow.init();
             })
         },
         methods:{
@@ -58,4 +95,16 @@
    .el-carousel__item:nth-child(2n+1) {
      background-color: #d3dce6;
    }
+
+    .slideInLeft{
+        height: 300px;
+        background: yellow;
+    }
+    .slideInRight{
+        height: 300px;
+        background: blue;
+    }
+
+
+
 </style>
