@@ -13,7 +13,7 @@
         </ul>
         <div class="panel item start" data-section-name="overview1">
             <el-carousel :interval="4000" type="card" height="200px">
-              <el-carousel-item v-for="item in items" >
+              <el-carousel-item v-for="item in box" >
                  <router-link v-if='item.id == 1' :to="{path:'huiShao'}"><img  v-bind:src="item.img" :id='item.id' alt="" ></router-link>
                  <router-link v-if='item.id == 2' :to="{path:'hongShao'}"><img  v-bind:src="item.img" :id='item.id' alt="" ></router-link>   
                  <router-link v-if='item.id == 3' :to="{path:'fanShao'}"><img  v-bind:src="item.img" :id='item.id' alt="" ></router-link>   
@@ -51,13 +51,13 @@
     export default {
         data () {
             return {
-                items:[
+                box:[
                     {img:'static/images/sixtoone.png',id:1},
                     {img:'static/images/sixtotwo.png',id:2},
                     {img:'static/images/sixtothree.jpg',id:3},
                     {img:'static/images/sixtofour.jpg',id:4},
-                    {img:'static/images/QQ.png',id:5},
-                    {img:'static/images/car.png',id:6},
+                    {img:'static/images/sixtothree.jpg',id:5},
+                    {img:'static/images/sixtofour.jpg',id:6},
                 ]
             }
         },
@@ -231,13 +231,13 @@
         opacity: 1;
    }
    .start{
-        background: url('../../static/images/six.png') 100% 100% no-repeat;
+        background: url('static/images/six.png') 100% 100% ;
         background-size:100% auto;
         opacity: 0.8;
         filter:alpha(opacity:80);
    }
    .one{
-      background: url('../../static/images/sixtoone.png') 100% 100% no-repeat;
+      background: url('static/images/sixtoone.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
@@ -245,20 +245,20 @@
    }
    .two{
       /*background: blue; */
-      background: url('../../static/images/sixtotwo.png') 100% 100% no-repeat;
+      background: url('static/images/sixtotwo.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
    }
    .three{
-      background: url('../../static/images/sixtothree.jpg') 100% 100% no-repeat;
+      background: url('static/images/sixtothree.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
       /*background: yellow;*/
    }
    .four{
-      background: url('../../static/images/sixtofour.jpg') 100% 100% no-repeat;
+      background: url('static/images/sixtofour.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
