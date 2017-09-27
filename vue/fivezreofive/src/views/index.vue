@@ -51,14 +51,7 @@
     export default {
         data () {
             return {
-                items:[
-                    {img:'static/images/sixtoone.png',id:1},
-                    {img:'static/images/sixtotwo.png',id:2},
-                    {img:'static/images/sixtothree.jpg',id:3},
-                    {img:'static/images/sixtofour.jpg',id:4},
-                    {img:'static/images/QQ.png',id:5},
-                    {img:'static/images/car.png',id:6},
-                ]
+               
             }
         },
         mounted: function () {
