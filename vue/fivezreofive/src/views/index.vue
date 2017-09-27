@@ -56,7 +56,8 @@
                     {img:'static/images/sixtotwo.png',id:2},
                     {img:'static/images/sixtothree.jpg',id:3},
                     {img:'static/images/sixtofour.jpg',id:4},
-                  
+                    {img:'static/images/QQ.png',id:5},
+                    {img:'static/images/car.png',id:6},
                 ]
             }
         },
@@ -230,13 +231,13 @@
         opacity: 1;
    }
    .start{
-        background: url('../../static/images/six.png?4c4ae76bee0d86c14f1ce0c762516410') ;
+        background: url('../../static/images/six.png') ;
         background-size:100% auto;
        /* opacity: 0.8;
         filter:alpha(opacity:80);*/
    }
    .one{
-      background: url('../../static/sixtoone.png?ff207e5f819642604fd2e84aea565e56') 100% 100% no-repeat;
+      background: url('../../static/sixtoone.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
@@ -244,20 +245,20 @@
    }
    .two{
       /*background: blue; */
-      background: url('../../static/sixtotwo.png?0ce02e529c1bcfaa7ab88ffd04c37ab9') 100% 100% no-repeat;
+      background: url('../../static/images/sixtotwo.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
    }
    .three{
-      background: url('../../static/sixtothree.jpg?4fd128c25b55a4fe1f686f8d06df2d32') 100% 100% no-repeat;
+      background: url('../../static/images/sixtothree.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
       /*background: yellow;*/
    }
    .four{
-      background: url('../../static/sixtofour.jpg?d6826f741d7445edd8777d3d2251a944') 100% 100% no-repeat;
+      background: url('../../static/images/sixtofour.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
