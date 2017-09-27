@@ -11,7 +11,7 @@
                 <span class="text">鼠标上下滚动</span>
             </span>
         </ul>
-        <div class="panel item" data-section-name="overview1">
+        <div class="panel item start" data-section-name="overview1">
             <el-carousel :interval="4000" type="card" height="200px">
               <el-carousel-item v-for="item in items" >
                  <router-link v-if='item.id == 1' :to="{path:'huiShao'}"><img  v-bind:src="item.img" :id='item.id' alt="" ></router-link>
@@ -22,11 +22,28 @@
                  <router-link v-if='item.id == 6' :to="{path:'fangShao'}"><img  v-bind:src="item.img" :id='item.id' alt="" ></router-link>          
               </el-carousel-item>
             </el-carousel>
+             <div class="list"></div>
         </div>
-        <div class="panel item one" data-section-name="overview2"></div>
-        <div class="panel item two" data-section-name="overview3"></div>
-        <div class="panel item three" data-section-name="overview4"></div>
-        <div class="panel item four" data-section-name="overview5"></div>
+        <div class="panel item one" data-section-name="overview2">
+            <div class="list"> fsdfsafsfsdaf</div>
+           
+        </div>
+        <div class="panel item two" data-section-name="overview3">
+         <div class="list"> fadfsadfdasfdaf</div>
+           
+        </div>
+        <div class="panel item three" data-section-name="overview4">
+         <div class="list"> afsdfafsafd</div>
+           
+        </div>
+        <div class="panel item four" data-section-name="overview5">
+         <div class="list"> dsfaafdsaf
+            sdfasfds
+            dfsf
+            dfsafasd
+            sfddf</div>
+           
+        </div>
     </div>
 	       
 </template>
@@ -37,7 +54,7 @@
                 items:[
                     {img:'static/images/sixtoone.png',id:1},
                     {img:'static/images/sixtotwo.png',id:2},
-                    {img:'static/images/QQ.png',id:3},
+                    {img:'static/images/sixtothree.jpg',id:3},
                     {img:'static/images/sixtofour.jpg',id:4},
                     {img:'static/images/QQ.png',id:5},
                     {img:'static/images/car.png',id:6},
@@ -171,13 +188,13 @@
         height: 200px;
    }
    
-   .el-carousel__item:nth-child(2n) {
-     background-color: #99a9bf;
-   }
-   
-   .el-carousel__item:nth-child(2n+1) {
-     background-color: #d3dce6;
-   }
+    .el-carousel__item:nth-child(2n) {
+      background-color: #99a9bf;
+    }
+    
+    .el-carousel__item:nth-child(2n+1) {
+      background-color: #d3dce6;
+    }
     .panel img{
         width: 100%;
         height: 100%;
@@ -210,17 +227,42 @@
         width: 100%;
         height: 100%;
    }
+   .item .list{
+        opacity: 1;
+   }
+   .start{
+        background: url('../../static/images/six.png') ;
+        background-size:100% auto;
+       /* opacity: 0.8;
+        filter:alpha(opacity:80);*/
+   }
    .one{
-      background: red;
+      background: url('../../static/images/sixtoone.png') 100% 100% no-repeat;
+      background-size:100% 100%;
+      opacity: 0.8;
+      filter:alpha(opacity:80);
+      background-position: center;
    }
    .two{
-      background: blue; 
+      /*background: blue; */
+      background: url('../../static/images/sixtotwo.png') 100% 100% no-repeat;
+      background-size:100% 100%;
+      opacity: 0.8;
+      filter:alpha(opacity:80);
    }
    .three{
-      background: yellow;
+      background: url('../../static/images/sixtothree.jpg') 100% 100% no-repeat;
+      background-size:auto 100%;
+      opacity: 0.8;
+      filter:alpha(opacity:80);
+      /*background: yellow;*/
    }
    .four{
-      background: green;
+      background: url('../../static/images/sixtofour.jpg') 100% 100% no-repeat;
+      background-size:auto 100%;
+      opacity: 0.8;
+      filter:alpha(opacity:80);
+      /*background: green;*/
    }
    .nav_mark {
         position: relative;

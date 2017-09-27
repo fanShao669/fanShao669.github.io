@@ -54,6 +54,7 @@ import cpt5demo1 from './views/vuebook/chapter5/demo1.vue'
 import es2015demo1 from './views/es2015book/demo1.vue'
 import es2015demo2 from './views/es2015book/demo2.vue'
 import es2015demo3 from './views/es2015book/demo3.vue'
+import es2015demo4 from './views/es2015book/demo4.vue'
 
 import VueRouter from 'vue-router' 
 import VueResource from 'vue-resource' 
@@ -274,6 +275,10 @@ const router = new VueRouter({
     {
       path: '/es2015book/demo3',
       component: es2015demo3
+    },
+    {
+      path: '/es2015book/demo4',
+      component: es2015demo4
     },
     //  {
     //   path: '/recharge',
