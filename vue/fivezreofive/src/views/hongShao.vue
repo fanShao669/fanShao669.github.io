@@ -1,6 +1,7 @@
 <template>
     <div class="g-bd">
         hongShao 身边妹子贼多 其实可以让他介绍的
+        
         <foot></foot>  
     </div>
            
