@@ -231,13 +231,13 @@
         opacity: 1;
    }
    .start{
-        background: url('../../static/images/six.png') ;
+        background: url('../../static/images/six.png') 100% 100% no-repeat;
         background-size:100% auto;
-       /* opacity: 0.8;
-        filter:alpha(opacity:80);*/
+        opacity: 0.8;
+        filter:alpha(opacity:80);
    }
    .one{
-      background: url('../../static/sixtoone.png') 100% 100% no-repeat;
+      background: url('../../static/images/sixtoone.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
