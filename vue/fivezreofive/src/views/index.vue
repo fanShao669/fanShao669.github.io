@@ -231,7 +231,7 @@
         opacity: 1;
    }
    .start{
-        background: url('static/images/six.png') 100% 100% ;
+        background: url('../../static/images/six.png') 100% 100% ;
         background-size:100% auto;
         opacity: 0.8;
         filter:alpha(opacity:80);
