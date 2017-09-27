@@ -237,7 +237,7 @@
         filter:alpha(opacity:80);*/
    }
    .one{
-      background: url('static/images/sixtoone.png') 100% 100% no-repeat;
+      background: url('../../static/images/sixtoone.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
@@ -245,20 +245,20 @@
    }
    .two{
       /*background: blue; */
-      background: url('static/images/sixtotwo.png') 100% 100% no-repeat;
+      background: url('../../static/images/sixtotwo.png') 100% 100% no-repeat;
       background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
    }
    .three{
-      background: url('static/images/sixtothree.jpg') 100% 100% no-repeat;
+      background: url('../../static/images/sixtothree.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
       /*background: yellow;*/
    }
    .four{
-      background: url('static/images/sixtofour.jpg') 100% 100% no-repeat;
+      background: url('../../static/images/sixtofour.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
