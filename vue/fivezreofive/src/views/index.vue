@@ -6,6 +6,8 @@
             <a href="#overview3" class="num3"></a>
             <a href="#overview4" class="num4"></a>
             <a href="#overview5" class="num5"></a>
+            <a href="#overview6" class="num6"></a>
+            <a href="#overview7" class="num7"></a>
             <span class="nav_mark">
                 <span class="mouse"></span>
                 <span class="text">鼠标上下滚动</span>
@@ -44,6 +46,23 @@
             sfddf</div>
            
         </div>
+        <div class="panel item five" data-section-name="overview6">
+         <div class="list"> dsfaafdsaf
+            sdfasfds
+            dfsf
+            dfsafasd
+            sfddf</div>
+           
+        </div>
+        <div class="panel item six" data-section-name="overview7">
+          <div class="list"> dsfaafdsaf
+            sdfasfds
+            dfsf
+            dfsafasd
+            sfddf
+          </div>
+           
+        </div>
     </div>
 	       
 </template>
@@ -56,8 +75,8 @@
                     {img:'static/images/sixtotwo.png',id:2},
                     {img:'static/images/sixtothree.jpg',id:3},
                     {img:'static/images/sixtofour.jpg',id:4},
-                    {img:'static/images/sixtothree.jpg',id:5},
-                    {img:'static/images/sixtofour.jpg',id:6},
+                    {img:'static/images/sixtofive.jpg',id:5},
+                    {img:'static/images/sixtosix.jpg',id:6},
                 ]
             }
         },
@@ -122,6 +141,16 @@
                             $(".aimg").addClass("fadeInDown");
                             $(".hh").addClass("flipInX");
                         }
+                        if(ref === "overview6") {
+                            _this.initialAnimated();
+                            $(".aimg").addClass("fadeInDown");
+                            $(".hh").addClass("flipInX");
+                        }
+                        if(ref === "overview7") {
+                            _this.initialAnimated();
+                            $(".aimg").addClass("fadeInDown");
+                            $(".hh").addClass("flipInX");
+                        }
                      },
                      afterRender: function () {
                         $(".left_nav a").on("click",function() {
@@ -148,6 +177,12 @@
                     }else if(hashList == 'overview5'){
                         $('.num5').addClass('bg_orange');
                         $('.num5').siblings().removeClass('bg_orange')
+                    }else if(hashList == 'overview6'){
+                        $('.num6').addClass('bg_orange');
+                        $('.num6').siblings().removeClass('bg_orange')
+                    }else if(hashList == 'overview7'){
+                        $('.num7').addClass('bg_orange');
+                        $('.num7').siblings().removeClass('bg_orange')
                     }
                 })
 
@@ -231,10 +266,10 @@
         opacity: 1;
    }
    .start{
-    /*    background: url('static/images/six.png') 100% 100%;
+        background: url('../../static/images/six.png') 100% 100%;
         background-size:100% auto;
         opacity: 0.8;
-        filter:alpha(opacity:80);*/
+        filter:alpha(opacity:80);
    }
    .one{
       background: url('../../static/images/sixtoone.png') 100% 100% no-repeat;
@@ -260,6 +295,20 @@
    .four{
       background: url('../../static/images/sixtofour.jpg') 100% 100% no-repeat;
       background-size:auto 100%;
+      opacity: 0.8;
+      filter:alpha(opacity:80);
+      /*background: green;*/
+   }
+    .five{
+      background: url('../../static/images/sixtofive.jpg') 100% 100% no-repeat;
+      background-size:100% 100%;
+      opacity: 0.8;
+      filter:alpha(opacity:80);
+      /*background: green;*/
+   }
+    .six{
+      background: url('../../static/images/sixtosix.jpg') 100% 100% no-repeat;
+      background-size:100% 100%;
       opacity: 0.8;
       filter:alpha(opacity:80);
       /*background: green;*/

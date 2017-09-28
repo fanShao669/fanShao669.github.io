@@ -1,15 +1,13 @@
 <template>
 	<div class="g-bd">
-		<!-- 打字动画 -->
+		<!-- 缓动效果 -->
 		
-        <p class="blink-smooth-1">Peek-a-boo!</p>
-        <p class="blink-smooth-2">贼6</p>
-        <p class="blink">fanShao</p>
+        <div class="ball"></div>
 
 
 
-		<router-link tag="span" to="/css41">第41个动画</router-link>
-		<router-link tag="span" to="/css39">第39个动画</router-link>	
+		<router-link tag="span" to="/css39">第39个动画</router-link>
+		<router-link tag="span" to="/css41">第41个动画</router-link>	
         <!-- <fanaside></fanaside> -->
 	</div>
 </template>
@@ -41,25 +39,30 @@
 		font-size: 20px;
 		color:red;
 	}
-    @keyframes blink-1 { 50% { color: transparent } }
-    @keyframes blink-2 { to { color: transparent } }
+        /**
+     * Bouncing animation
+     */
 
-    p {
-        padding: 1em;
-        background: gold;
+    @keyframes bounce {
+        60%, 80%, to {
+            transform: translateY(400px);
+            animation-timing-function: ease;
+        }
+        70% { transform: translateY(300px); }
+        90% { transform: translateY(360px); }
     }
 
-    .blink-smooth-1 {
-        animation: 1s blink-1 3;
+    .ball {
+        width: 0; height: 0; padding: 1.5em;
+        border-radius: 50%;
+        margin: auto;
+        background: red radial-gradient(at 30% 30%, #fdd, red);
+        animation: bounce 2s cubic-bezier(.1,.25,1,.25) forwards;
     }
 
-    .blink-smooth-2 {
-        animation: .5s blink-2 6;
-        animation-direction: alternate;
-    }
-
-    .blink {
-        animation: 1s blink-1 3 steps(1);
+    body {
+        background: linear-gradient(skyblue, white 450px, yellowgreen 0);
+        min-height: 100vh;
     }
 
 </style>
