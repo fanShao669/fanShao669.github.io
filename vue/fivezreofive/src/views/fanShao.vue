@@ -10,7 +10,14 @@
              王牌对王牌   
         </div>
         <div class='wow slideInLeft bounceInUp'>
-            
+            <ul id="dowebok" class="f-cb">
+                <li><img data-original="static/images/sixtoone.png" src="static/images/sixtoone.png" alt="图片1"></li>
+                <li><img data-original="static/images/sixtotwo.png" src="static/images/sixtotwo.png" alt="图片2"></li>
+                <li><img data-original="static/images/sixtothree.jpg" src="static/images/sixtothree.jpg" alt="图片3"></li>
+                <li><img data-original="static/images/sixtofour.jpg" src="static/images/sixtofour.jpg" alt="图片4"></li>
+                <li><img data-original="static/images/sixtofive.jpg" src="static/images/sixtofive.jpg" alt="图片5"></li>
+                <li><img data-original="static/images/sixtosix.jpg" src="static/images/sixtosix.jpg" alt="图片6"></li>
+            </ul>
         </div>
         <div class='wow slideInRight bounceInUp'>
 
@@ -58,6 +65,11 @@
                 //     live: true
                 // });
                 // wow.init();
+
+                // 图片查看器
+                $('#dowebok').viewer({
+                    url: 'data-original',
+                });
             })
         },
         methods:{
@@ -127,4 +139,23 @@
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
     }
+
+    /*图片查看器*/
+    #dowebok{
+        width: 100%;
+        height: auto;
+    }
+    #dowebok li{
+        float:left;
+        width: 33.33%;
+        padding: 5px;
+        padding-bottom: 0;
+        height: 150px;
+        box-sizing: border-box;
+    }
+    #dowebok li img{
+        width: 100%;
+        height: 100%;
+    }
+
 </style>

@@ -27,7 +27,10 @@
              <div class="list"></div>
         </div>
         <div class="panel item one" data-section-name="overview2">
-            <div class="list"> fsdfsafsfsdaf</div>
+            <div class="list"> 
+            
+
+            </div>
            
         </div>
         <div class="panel item two" data-section-name="overview3">
@@ -83,6 +86,9 @@
         mounted: function () {
             this.$nextTick(function () {
                 let _this = this;
+
+            
+
                 //轮播
                 // var num1=0;
                 // var num2=0;
