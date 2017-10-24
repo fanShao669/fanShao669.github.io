@@ -1,6 +1,18 @@
 <template>
     <div class="g-bd">
         fangShao  是个男生  你信？
+        <div class="block">
+          <span class="demonstration">默认不区分颜色</span>
+          <el-rate v-model="value1"></el-rate>
+        </div>
+        <div class="block">
+          <span class="demonstration">区分颜色</span>
+          <el-rate
+            v-model="value2"
+            :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
+          </el-rate>
+        </div>
+        <button @click='upload'>提交</button>
         <foot></foot>  
     </div>
            
@@ -17,13 +29,15 @@
                     {img:'static/images/weixin.png',id:4},
                     {img:'static/images/QQ.png',id:5},
                     {img:'static/images/car.png',id:6},
-                ]
+                ],
+                value1: null,
+                value2: null
             }
         },
         mounted: function () {
             this.$nextTick(function () {
                 let _this = this;
-
+                
             })
         },
         methods:{
@@ -36,6 +50,10 @@
                 }
                 return null;
             },
+            upload:function(){
+                console.log(this.value1);
+                console.log(this.value2);
+            }
         },
         computed: {
 
@@ -66,5 +84,12 @@
    
    .el-carousel__item:nth-child(2n+1) {
      background-color: #d3dce6;
+   }
+   button{
+        width: 100px;
+        height: 100px;
+        background: yellow;
+        line-height: 100px;
+        text-align:center;
    }
 </style>

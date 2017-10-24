@@ -9,6 +9,7 @@ import fanShao from './views/fanShao.vue'
 import kunShao from './views/kunShao.vue'
 import qiShao from './views/qiShao.vue'
 import fangShao from './views/fangShao.vue'
+import map from './views/map.vue'
 
 import VueRouter from 'vue-router' 
 import VueResource from 'vue-resource'
@@ -51,7 +52,11 @@ const router = new VueRouter({
       path: '/fangShao',
       component: fangShao
     },
-   
+    {
+      path: '/map',
+      component: map
+    },
+
     { path: '*', redirect: '/index'}
   ]
 })

@@ -14,8 +14,8 @@
             <p>Flank anim chuck boudin id consectetur bresaola ham pork loin cupim andouille frankfurter. Proident do ball tip nostrud nulla sed, frankfurter ut commodo corned beef ut. Ex aute in, pig deserunt beef ribs turducken pastrami irure ball tip pork belly pork chop sausage id. Chicken sunt nisi tempor sed. In eiusmod non fatback tempor tenderloin pastrami adipisicing cow lorem ut tail jerky cupidatat venison. Jowl consequat commodo pork loin ipsum pork belly prosciutto aute beef. Ball tip shoulder aliqua, fugiat landjaeger kevin pork chop beef ribs leberkas hamburger cillum turkey ut doner culpa.</p>
         </main>
         
-        <router-link tag="span" to="/css40">第39个动画</router-link>
-        <router-link tag="span" to="/css38">第37个动画</router-link>    
+        <router-link tag="span" to="/css39">第39个动画</router-link>
+        <router-link tag="span" to="/css37">第37个动画</router-link>    
         <footer>
             <p>© 2015 No rights reserved.</p>
             <p>Made with ♥ by an anonymous pastafarian.</p>

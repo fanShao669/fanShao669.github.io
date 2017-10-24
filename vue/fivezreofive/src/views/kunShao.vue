@@ -1,13 +1,43 @@
 <template>
     <div class="g-bd">
             kunShao  小日子过的怎么样 也不知道  好久没见了
-            <div id='list'>
-            </div>
+            <!-- <div id='list'> -->
+                <el-row>
+                  <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
+                  <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+                  <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+                  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+                  <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
+                </el-row>
+                <input v-model.trim="msg">
+
+
+
+                  <div id="container" tabindex="0"></div>
+            <!-- </div> -->
         <foot></foot>  
     </div>
            
 </template>
-
 <script type="text/javascript">
     import foot from '../components/foot.vue'
     export default {
@@ -20,14 +50,20 @@
                     {img:'static/images/weixin.png',id:4},
                     {img:'static/images/QQ.png',id:5},
                     {img:'static/images/car.png',id:6},
-                ]
+                ],
+                msg:'jjj',
             }
         },
         mounted: function () {
             this.$nextTick(function () {
                 let _this = this;
                 //初始化
-                $('#list').myList()
+                // $('#list').myList()、
+                var map = new AMap.Map('container',{
+                    resizeEnable: true,
+                    zoom: 10,
+                    center: [116.480983, 40.0958]
+                });
             })
         },
         methods:{
@@ -76,4 +112,38 @@
     #navBar>a{text-align: center;display: block;text-decoration:none;height: 4.166%;line-height:100%;color: #333;font-size: 13px;}
     #prompt{position: fixed;left: 50%;top:50%;margin:-30px 0 0 -30px;width: 60px;height: 60px;text-align: center;line-height: 60px;font-size: 30px;color: #fff;background: rgba(0,0,0,0.5);z-index: 10;display: none;border-radius:4px;}
     #prompt.active{display:block;}
+
+
+     /*布局*/
+     .el-row {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .el-col {
+        border-radius: 4px;
+      }
+      .bg-purple-dark {
+        background: #99a9bf;
+      }
+      .bg-purple {
+        background: #d3dce6;
+      }
+      .bg-purple-light {
+        background: #e5e9f2;
+      }
+      .grid-content {
+        border-radius: 4px;
+        min-height: 36px;
+      }
+      .row-bg {
+        padding: 10px 0;
+        background-color: #f9fafc;
+      }
+
+      #container{
+        width: 100%;
+        height: 300px;
+      }
 </style>
