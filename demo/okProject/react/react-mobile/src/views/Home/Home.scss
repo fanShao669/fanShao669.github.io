@@ -1,0 +1,16 @@
+/*
+    *主页面
+    *author:yanji
+    *date:2018/8/13;
+*/
+
+.yani-home{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.yani-home-body{
+    flex: 1;
+    overflow: scroll;
+
+}
