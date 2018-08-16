@@ -1,0 +1,47 @@
+
+h1,h2,h3,h4,h5,p,ul,ol{ margin: 0; padding: 0; list-style: none;}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix{
+  zoom: 1;
+}
+
+.tp-setting{
+	padding: 20px;
+	
+	.fa{
+	    margin-right: 8px;
+	}
+	
+	.tp-tips{
+		border:1px dashed #20A0FF;
+		padding: 10px 10px 20px;
+		border-radius: 5px;
+		
+		
+		>h5{
+		    margin: 0;
+		    height: 40px;
+		    line-height: 40px;
+		    font-size: 20px;
+		    margin-bottom: 10px;
+		    color: #20A0FF;
+		}
+		
+		.txt{
+		    padding-left: 20px;
+		    color: #999;
+		    margin: 2px 0;
+		}
+	}
+}
+
+.tp-setting-form{
+    min-height: 700px;
+}
