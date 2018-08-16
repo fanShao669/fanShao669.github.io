@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/vueadmins');
+var reactpc = require('./routes/reactpcs');
 
 var app = express();
 var debug = require('debug')('my-application'); // debug模块
@@ -25,8 +25,8 @@ app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:500
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/api/yanji', indexRouter);
+app.use('/api/reactpc', reactpc);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

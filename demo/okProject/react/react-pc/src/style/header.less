@@ -1,0 +1,125 @@
+@import "variables";
+
+.header {
+    padding: 0;
+    height: .5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: transparent;
+    .header-center {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1200px;
+        height: .5rem;
+        overflow: hidden;
+        padding: 0 .3rem;
+        &>div {
+            display: inline-block;
+        }
+        .header-center-icon {
+            width: 12.4%;
+            vertical-align: top;
+        }
+        .header-center-menu {
+            width: 53%;
+            padding-left: 2.1%;
+            vertical-align: top;
+        }
+        .header-center-exit {
+            width: 34%;
+            color: @black01;
+        }
+        .icon-wangyiwang {
+            font-size: .5rem;
+            color: @red03;
+            vertical-align: middle;
+        }
+        .title {
+            font-size: .18rem;
+            color: @black01;
+            padding-left: .1rem;
+            font-weight: 700;
+            vertical-align: top;
+        }
+        .header-center-right {
+            >ul {
+                vertical-align: top;
+            }
+            >a {
+                display: inline-block;
+                height: inherit;
+                vertical-align: top;
+            }
+            .login-out{
+                color: @black01;
+                cursor: pointer;
+                margin-left: .1rem;
+            }
+
+            .login-in{
+                width: 52px;
+                height: 28px;
+                display: inline-block;
+                line-height: 28px;
+                text-align: center;
+                border-radius: 4px;
+                background: #2f54eb;
+                color:#fff;
+                cursor: pointer;
+            }
+        }
+        .notice-menu {
+            display: inline-block;
+            width: .5rem;
+            margin-right: .1rem;
+            background: transparent;
+        }
+    }
+    
+    .mobile-header-center{
+        .icon-wangyiwang {
+            font-size: .4rem;
+            color: @red02;
+        }
+        .title{
+            padding-left: .1rem;
+            font-size: .16rem;
+            font-weight: 700;
+            vertical-align: top;
+            color: @black01;
+        }
+    }
+    .nav-text {
+        color: @black01;
+    }
+    .ant-badge-count {
+        height: 16px;
+        line-height: 16px;
+        padding: 0;
+        left:16px;
+        min-width: 16px;
+    }
+}
+
+.header-for-center{
+    box-shadow: 2px 1px #efefef;   //暂时屏蔽
+}
+
+
+
+@media (min-width: 768px) {
+    .header-center {
+        width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .header-center {
+        width: 940px;
+    }
+}
+@media (min-width: 1200px) {
+    .header-center {
+        width: 1200px;
+    }
+}

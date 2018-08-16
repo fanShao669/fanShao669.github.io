@@ -1,0 +1,138 @@
+.slideShow {
+    width: 210px;
+    height: 242px;
+    position: relative;
+    *zoom:1}
+
+#slideWrap {
+    height: 300px;
+    position: relative;
+    overflow: hidden
+}
+
+#slideBtn a {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(http://res.campus.netease.com/pc/boot/20160128143652/img/piaoc/btn2_4d010b5.png) no-repeat -9999px;
+    z-index: 99;
+    top: 101px;
+    cursor: pointer;
+    text-indent: -9999px
+}
+
+#slideBtn #prev {
+    background-position: 0 0;
+    left: 10px
+}
+
+#slideBtn #next {
+    background-position: -176px 0;
+    right: 10px
+}
+
+.slideShow ul {
+    width: 9999px;
+    position: absolute;
+    top: 6px;
+    left: 0
+}
+
+.slideShow li {
+    float: left
+}
+
+.slideShow ul li {
+    width: 210px;
+    position: relative
+}
+
+.blue-btn {
+    width: 31px;
+    height: 31px;
+    background: url(http://res.campus.netease.com/pc/boot/20160128143652/img/piaoc/blue-btn_bec8b12.png) 0 0 no-repeat;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    cursor: pointer
+}
+
+.slideShow ul li img {
+    display: block;
+    width: 210px;
+    height: auto
+}
+
+.slideShow ol {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    z-index: 99
+}
+
+.slideShow ol li a {
+    display: none;
+    height: 16px;
+    color: #191b20;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600
+}
+
+.slideShow ol li a.current {
+    display: block
+}
+
+#fcr {
+    position: absolute;
+    display: inline-block;
+    width: 210px;
+    height: 242px;
+    left: 18px;
+    bottom: 0;
+    z-index: 99999;
+    -webkit-animation: pup 3.2s ease 0s infinite;
+    animation: pup 3.2s ease 0s infinite;
+    -o-animation: pup 3.2s ease 0s infinite
+}
+
+.btn-slide {
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+    font: 20px/20px Arial;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    text-indent: -9999px;
+    background: url(http://res.campus.netease.com/pc/boot/20160128143652/img/piaoc/close_5510d10.png) 0 0 no-repeat
+}
+
+@-webkit-keyframes pup {
+    0% {
+        -webkit-transform: translate(0px,-10px)
+    }
+
+    50% {
+        -webkit-transform: translate(0px,-30px)
+    }
+
+    100% {
+        -webkit-transform: translate(0px,-10px)
+    }
+}
+
+@keyframes pup {
+    0% {
+        transform: translate(0px,-10px)
+    }
+
+    50% {
+        transform: translate(0px,-30px)
+    }
+
+    100% {
+        transform: translate(0px,-10px)
+    }

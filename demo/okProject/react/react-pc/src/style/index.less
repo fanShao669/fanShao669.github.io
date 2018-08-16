@@ -1,0 +1,119 @@
+@import "variables";
+@import "global";
+@import "scroll";
+@import "icons";
+@import "button";
+@import "modal";
+@import "menu";
+@import "banner";
+@import "card";
+@import "img";
+@import 'notice-icon';
+@import "utils-text";
+@import "utils-color";
+@import "utils-size";
+@import "utils-border";
+@import "utils-tabs";
+@import "utils-spacing";
+@import "function";
+@import './homePage/index'; //首页
+@import './secondPage/index';  //导航栏---第二页
+@import './thirdPage/index'; //导航栏---第三页
+@import './fourPage/index'; //导航栏---第四页
+@import './personalPage/index'; //导航栏---个人中心
+
+html{
+  font-size: 100px;
+}
+#root{
+  min-height: 100%;
+}
+
+#root{
+  height:100%;
+}
+
+.ant-layout{
+  min-height: 100%;
+  background:#ffffff;
+  &-header{
+    line-height: .5rem !important;
+  }
+}
+
+.u-login{
+  background: #fff2f0;
+  text-align: center;
+  line-height: .4rem;
+  color: @primary;
+}
+
+.footer{
+  height:1.8rem;
+  background:#9254de;
+  color:#fff;
+  font-size: 12px;
+  z-index: 101;
+  & .f-content{
+    padding: 0 .16rem;
+    height: 100%;
+    .f-footer-link{
+      margin-top: .32rem;
+      line-height: .22rem;
+      a {
+        color: #fff;
+      }
+    }
+    .f-footer-des{
+      line-height: .22rem;
+      color: #fff;
+      opacity:0.65;
+      a {
+        color: #fff;
+      }
+    }
+    .f-footer-code {
+      p {
+        margin-top: 10px;
+        color: #fff;
+        opacity:0.8;
+      }
+    }
+  }
+}
+
+:global {
+  // .ant-popover{
+  //   box-shadow: 0 2px 10px #ccc;
+  //   width: 100%;
+  //   & .ant-popover-inner-content{
+  //     padding: 0;
+  //   }
+  // }
+  .ant-popover-placement-bottomLeft{
+    width: 100%;
+  }
+  .ant-menu-vertical{
+    width: 100% !important;
+  }
+  .ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
+    font-size: 12px !important;
+  }
+  .ant-card-head-title {
+    font-size: 14px !important;
+    padding: 30px 0 16px 0 !important;
+  }
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width:3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#d4d4d4;
+}
+
+/*设置滚动到顶部的层级*/
+.ant-back-top{
+  z-index: 999!important;
+}
