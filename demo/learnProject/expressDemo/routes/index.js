@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
 	res.cookie('testName', 'testValue')   //实例7.cookie-parse的使用
   	res.render('index',{helloWorld: 'hello,world'});
   	// console.log(req.headers.cookie);
-  	console.log('111111111111111111'+req.cookies.testName)
+  	// console.log('111111111111111111'+req.cookies.testName)
 });
 
 

@@ -12,6 +12,8 @@
     "debug": "~2.6.9",
     "ejs": "^2.6.1",
     "express": "~4.16.0",
+    "file-stream-rotator": "^0.3.0",
+    "fs": "^0.0.1-security",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",

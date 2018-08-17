@@ -4,18 +4,43 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var ejs = require('ejs');  //我是新引入的ejs插件
+var fs = require('fs');
+var FileStreamRotator = require('file-stream-rotator'); //日志切割
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', ejs.__express);
 app.set('view engine', 'html');
 
-app.use(logger('dev'));
+//实例10：默认的日志打印
+app.use(logger('dev')); 
+
+ //实例8.打印日志到本地
+ /**********start******************************************************************************/
+// var accessLogStream = fs.createWriteStream(path.join(__dirname,'access.log'),{flags:'a'});
+// app.use(logger('short',{stream:accessLogStream})); 
+ /**********end*********************************************************************************/
+// 实例9:日志切割
+/*****************************************start**********************************************/
+// var logDirectory = path.join(__dirname,'log');
+// // ensure log directory exists
+// fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory)
+// // create a rotating write stream
+// var accessLogStream = FileStreamRotator.getStream({
+// 	date_format:'YYYYMMDD',
+// 	filename:path.join(logDirectory,'access-%DATE%.log'),
+// 	frequency:'daily',
+// 	verbose:false
+// })
+// app.use(logger('combined',{stream:accessLogStream}))
+/*******************************************end*****************************************/
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 /*第三方中间件*/
