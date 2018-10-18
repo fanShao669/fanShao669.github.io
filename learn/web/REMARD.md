@@ -1,39 +1,62 @@
 
 web性能优化
 1、HTTP/HTTPS缓存机制
-2.webpack打包. chunck.js   分模块打包
+2.webpack打包. chunck.js   分模块打包, 热更新， 代理
 
 
 
 
 接下来的PPT
-1、HTTP/HTTPS缓存机制  
+1、HTTP/HTTPS缓存机制  (熟悉常见问题以及对策)
 2、webpack4研究；
 3、架构问题；
-4、react原理；
+4、react原理 生命周期  源码以及设计思想； redux api  redux-saga(https://www.zcfy.cc/article/async-operations-using-redux-saga-freecodecamp-2377.html)
 5、vue原理
 6、webpack打包机制 多个chunck 热更新问题；
 7、游戏 egret  原理canvas 画布；  看看canvas
 8 HTML5 CSS3  ES2015;
 9 http统一拦截
-
+10.redux-saga+redux   文档:1 https://www.jianshu.com/p/6bcf4573ca28?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation  2.https://juejin.im/post/59e083c8f265da43111f3a1f
+11。为什么使用redux https://segmentfault.com/a/1190000012142449 
 
 面试问道的东西
 基础篇
-1.problem1---Javascript的12种去重方法  https://mp.weixin.qq.com/s/U-Ka1fXeOUdQZhWZxqp4_A
-2.problem2---js的数据类型
+1.problem1---Javascript的12种去重方法  https://mp.weixin.qq.com/s/U-Ka1fXeOUdQZhWZxqp4_A  *
+2.problem2---js的数据类型 *
 3.problem3---js事件
 4.problem4---移动端的触摸事件
-5.problem5-路由器的缓存
-6.problem6---跨域以及跨域原理
+5.problem5---路由器的缓存
+6.problem6---跨域以及跨域原理  (代理  cros 产生原因)
 7.problem7---作用域  怎么预防作用域污染
 8.problem8---闭包 
-9.problem8---前端缓存？ 缓存分为几类？
+9.problem9---前端缓存？ 缓存分为几类？
 10.problem10---js常用数组操作方法,包含ES6方法  https://mp.weixin.qq.com/s/f-ygI68q-dj6pj6KRxZ-sQ
-11.problem11---HTML5、CSS3新特性  每个至少将10个
+11.problem11---HTML5、CSS3新特性  每个至少将10个 HTML5 语义元素
 12.problem12---http请求统一拦截  code码代表意义
 13.problem13---callback,promise,generator,async-await https://mp.weixin.qq.com/s/5cDGrZlUu_-ERpWpWoouyg
 14.problem14---请求方式eg(axios,fetch,(get,post请求))
+15.problem15---call apply的用法
+16.problem16---闭包，内存泄漏等问题
+17.problem17---input框中的事件  eg:oninput、onchange与onpropertychange(https://blog.csdn.net/freshlover/article/details/39050609) 
+18.problem18---Promise  应该是es6的东西 哇哈哈哈  看看阮一峰的es6
+19.problem19---1px问题 移动端主要是 https://www.jianshu.com/p/7e63f5a32636
+20:problem20---正则 
+21:problem21---nginx与前端开发  https://juejin.im/post/5bacbd395188255c8d0fd4b2
+22:problem22---数组的方法 es5 es6等
+23:problem23---移动端触屏事件以及pc操作页面事件
+24:problem24---冒泡和捕获事件
+25:problem25---git的用法
+26:problem26---面试对象的设计思想，原型链__proto__等特点以及用法；
+27:problem27---node.js的了解以及用法 express4 koa2等框架的简单了解;
+28:problem28--- map filter split reduce promise 等数组操作 
+29:problem29--- AMD加载前置  CMD延时加载   MVVM MVC   
+30:problem30--- react vue为什么要使用这个，为什么使用react而不使用vue
+31:problem31--- 二叉树， 冒泡 ,
+31:problem32--- 柯里化
+32:problem33--- 学习网站   nec(http://nec.netease.com/) w3c(http://www.w3school.com.cn/)  菜鸟教程(http://www.runoob.com)
+
+进阶篇
+1.try/catch 事件
 
 
 注意

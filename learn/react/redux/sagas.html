@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>redux-sagas</title>
+	<style>
+		h3{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	    <fieldset>
+	      <legend>redux-sagas 可以使数据层和UI层分离:</legend>
+	      学习sagas之前，我们需要先学习一下es6中的Generator 函数以及Iterator
+	      <mark>call(fn, ...args) 这个函数，现在我们不立即执行异步调用，相反，call 创建了一条描述结果的信息</mark>
+	    </fieldset>
+	    <h3>Effects</h3>	
+	    <section>一些简单 Javascript 对象</section>
+	    <h3>fork(fn, ...args)</h3>
+	    <section>创建一个 Effect 描述信息，用来命令 middleware 以 非阻塞调用 的形式执行 fn。</section>
+	    <strong>fork，以及 race，都是用于管理 Saga 间并发的中心化 Effect。</strong>
+		<h3>all([...effects]) - parallel effects</h3>	
+	    <section>创建一个 Effect 描述信息，用来命令 middleware 并行地运行多个 Effect，并等待它们全部完成。这是与标准的 Promise#all 相当对应的 API。</section>
+	</form>
+</body>
+</html>
