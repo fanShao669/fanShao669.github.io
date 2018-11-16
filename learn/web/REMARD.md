@@ -25,14 +25,14 @@ web性能优化
 2.problem2---js的数据类型 *
 3.problem3---js事件
 4.problem4---移动端的触摸事件
-5.problem5---路由器的缓存
+5.problem5---路由器的缓存  浏览器的缓存
 6.problem6---跨域以及跨域原理  (代理  cros 产生原因)
 7.problem7---作用域  怎么预防作用域污染
 8.problem8---闭包 
 9.problem9---前端缓存？ 缓存分为几类？
 10.problem10---js常用数组操作方法,包含ES6方法  https://mp.weixin.qq.com/s/f-ygI68q-dj6pj6KRxZ-sQ
 11.problem11---HTML5、CSS3新特性  每个至少将10个 HTML5 语义元素
-12.problem12---http请求统一拦截  code码代表意义
+12.problem12---http请求统一拦截  code码代表意义  http全过程   
 13.problem13---callback,promise,generator,async-await https://mp.weixin.qq.com/s/5cDGrZlUu_-ERpWpWoouyg
 14.problem14---请求方式eg(axios,fetch,(get,post请求))
 15.problem15---call apply的用法
@@ -51,10 +51,13 @@ web性能优化
 28:problem28--- map filter split reduce promise 等数组操作 
 29:problem29--- AMD加载前置  CMD延时加载   MVVM MVC   
 30:problem30--- react vue为什么要使用这个，为什么使用react而不使用vue
-31:problem31--- 二叉树， 冒泡 ,
-31:problem32--- 柯里化
-32:problem33--- 学习网站   nec(http://nec.netease.com/) w3c(http://www.w3school.com.cn/)  菜鸟教程(http://www.runoob.com)
-
+31:problem31--- 二叉树， 冒泡 , 算法 ，  排序等方法
+32:problem32--- 柯里化
+33:problem33--- 学习网站   nec(http://nec.netease.com/) w3c(http://www.w3school.com.cn/)  菜鸟教程(http://www.runoob.com)
+34:problem34--- json和二进制的转换 参考:arrayBuffer  https://www.kancloud.cn/kancloud/javascript-standards-reference/46517
+35:problem35--- 字符串和数组，对象转换  数组和对象转换  参考:https://www.kancloud.cn/kancloud/javascript-standards-reference/46517
+36.problem36---@1模块化的异步加载怎样做？@2图片加载完的时候会执行吗？@3window.onload执行时间？等 https://mp.weixin.qq.com/s/PQ0E3UWYLcryXRKdKSg0OQ
+37.problem37---熟悉前后端交互原理，对 HTTP 请求有一定深入的理解, 栈溢出
 进阶篇
 1.try/catch 事件
 
@@ -71,3 +74,12 @@ web性能优化
 
 架构问题
 1.参考1 关于常见的前端架构面试汇总题 https://juejin.im/post/5b3b3985e51d4519115cc219
+
+
+
+
+
+
+
+deps  部门id数组   [01,0102,010203]
+ptypes  职位类别id数组  [01,0102,010203]

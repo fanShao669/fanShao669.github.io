@@ -32,5 +32,40 @@ oninput 事件在用户输入时触发。
 其实可以使用 wrappedComponentRef={(form) => this.offerForm = form}  
 eg 父组件调用BasicInfo， <BasicInfo wrappedComponentRef={(form) => this.offerForm = form} {...totalData} /> 这样就可以获取到BasicInfo中的form表单值；
 
-4.
+4.在封装form表单中使用封装组件的话，form表单如何拿到组件中的value值呢？
+其实可以在自己的组件中使用onChange方法就可以解决；form如何能拿到各个值，原因就是ant-design在封装组件的时候会有onChange事件(语言没有组织好)
 
+5.在一次做一个页面， 这个页面是有一张很长的大图和一个button按钮组成（图片自适应，所以img不设置高度）
+我的做法是，把图片切割成多个小图片,然后使用定位吧按钮定位到底部。但是这个时候出现了一个问题。就是每次加载图片的时候，图片还没有加载出来，装载button的div有高度，直接跑到顶部。给用户的感觉就是button按钮一闪一闪的。效果很差。  
+
+处理方法:给button按钮上方的图片加上最小高度就可以解决这个问题
+
+解决前：
+<img style={{width:'100%'}} src={First} />
+<img style={{width:'100%'}} src={Second} />
+<img style={{width:'100%'}} src={Third} />
+<img style={{width:'100%'}} src={Four} />
+<img style={{width:'100%'}} src={Five} />
+<img style={{width:'100%'}} src={Six} />
+<img style={{width:'100%'}} src={Seven} />
+<img style={{width:'100%'}} src={Eight} />
+<div style={{width:'100%',height:'74px',position:'relative'}}>
+	<img className="u-btn" src={Nine} onClick={(e) => this.Todeliver(e)} />
+</div>
+解决后：
+<div style={{width:'100%',minHeight:'340px'}}><img style={{width:'100%'}} src={First} /></div>
+<div style={{width:'100%',minHeight:'520px'}}><img style={{width:'100%'}} src={Second} /></div>
+<img style={{width:'100%'}} src={Third} />
+<img style={{width:'100%'}} src={Four} />
+<img style={{width:'100%'}} src={Five} />
+<img style={{width:'100%'}} src={Six} />
+<img style={{width:'100%'}} src={Seven} />
+<img style={{width:'100%'}} src={Eight} />
+<div style={{width:'100%',height:'74px',position:'relative'}}>
+	<img className="u-btn" src={Nine} onClick={(e) => this.Todeliver(e)} />
+</div>
+
+6.react在写style样式的时候  width和height 的值都可以写成数字；   eg:width:100，  解析的时候会解析成px
+!!! lineHight这样的既可以写px又可以写数字的属性  不可以直接写成数字
+
+7
