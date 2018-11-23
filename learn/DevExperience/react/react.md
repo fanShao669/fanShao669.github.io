@@ -68,4 +68,17 @@ eg 父组件调用BasicInfo， <BasicInfo wrappedComponentRef={(form) => this.of
 6.react在写style样式的时候  width和height 的值都可以写成数字；   eg:width:100，  解析的时候会解析成px
 !!! lineHight这样的既可以写px又可以写数字的属性  不可以直接写成数字
 
-7
+7. 在render中 
+arr.map((item,index) => {
+	return 
+	<li> 
+		111
+	</li>
+})
+上面的写法是没有返回值的；
+需要这样写：
+arr.map((item,index) => {
+	return <li> 
+		111
+	</li>
+})

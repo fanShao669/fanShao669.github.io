@@ -58,6 +58,7 @@ web性能优化
 35:problem35--- 字符串和数组，对象转换  数组和对象转换  参考:https://www.kancloud.cn/kancloud/javascript-standards-reference/46517
 36.problem36---@1模块化的异步加载怎样做？@2图片加载完的时候会执行吗？@3window.onload执行时间？等 https://mp.weixin.qq.com/s/PQ0E3UWYLcryXRKdKSg0OQ
 37.problem37---熟悉前后端交互原理，对 HTTP 请求有一定深入的理解, 栈溢出
+38.problem38---js  递归方法等其他方法；   https://www.jianshu.com/p/ca514efd3830
 进阶篇
 1.try/catch 事件
 
