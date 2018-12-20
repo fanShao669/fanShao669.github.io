@@ -21,3 +21,42 @@ answer:这个属于高阶函数，内部会调用onChange事件，这样form才�
 	)}
 	{pagination && pagination.total > 0 && <CustomPagination {...pagination} change={this.changeTable} />}
 </Spin>
+
+4.Input组件中 遇到这样一个问题：  默认Input组件不显示， button组件显示，点击button  Input显示（这个是大背景）---需要点击button ，  input需要聚焦。但是只要点击button，input就会失去焦点。所以给我们的效果就是  只要点击button，input就会失去焦点  怎么处理呢？
+answer：
+通过isShowAddFavDir这个flag ，只要点击button，更改flag的布尔值，就会render，达到了点击button，input聚焦的效果
+//处理blur事件
+handleBlur = (e) => {
+	setTimeout(() => {
+       this.setState({isShowAddFavDir:true})
+    }, 300);
+}
+//处理KeyUp事件
+handleKeyUp = (e) => {
+    //限制开头不能输入空格
+    if (e.target.value.trim() == "") {
+        this.props.form.setFieldsValue({name:e.target.value.replace(/^\s+|\s+$/g, '')})   
+    }
+}
+<Input 
+	autoFocus={isShowAddFavDir?false:true}
+    maxLength="15"
+    onBlur={this.handleBlur}
+    onKeyUp={this.handleKeyUp}
+/>
+
+
+5.在form表单中使用getFieldDecorator  然后中间包裹的是Checkbox  然后回填信息，一直不成功
+解决办法：
+<FormItem {...this.formTailLayout}>
+	{getFieldDecorator('noticeAssessor111',{valuePropName:'checked'})(
+        <Checkbox>112222</Checkbox>
+    )}
+</FormItem>
+
+valuePropName  这个属性是设置包裹组件的回填属性 因为checkbox需设置checked  才会选中， 所以需要把valuePropName设置为checked才会回填成功
+
+(以上已分享到微信公众平台)
+
+6.
+多文件上传，大文件上传，分块上传，断点续传，文件秒传，上传失败自动修复再上传???

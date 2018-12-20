@@ -82,3 +82,7 @@ arr.map((item,index) => {
 		111
 	</li>
 })
+
+8.大文件上传（分片上传）   https://www.jianshu.com/p/0d1421df0e0d
+
+9.不是同一个页面最好不要使用store  会出现问题

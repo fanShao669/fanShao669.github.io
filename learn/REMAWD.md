@@ -7,6 +7,8 @@ js的工具库(lodash)  https://www.lodashjs.com/docs/4.17.5.html
 
 书籍：
 1.数据结构
+2.前端高级进阶13本经典书籍:https://mp.weixin.qq.com/s/0Qt9J8Ly3KWKrcfyBkeMig
+
 
 
 
