@@ -24,6 +24,10 @@ https://zhaoxiaofan669.github.io/baojia/index.html
 
 web使用工具
 1.sublime text3   http://www.sublimetextcn.com/
+参考：@1https://blog.csdn.net/wxl1555/article/details/69941451
+@2https://blog.csdn.net/qq_25506089/article/details/80346926
+@3https://www.cnblogs.com/weiqinl/p/6903261.html
+
 2.webstrom   https://www.jetbrains.com/webstorm/
 https://blog.csdn.net/xiongyouqiang/article/details/80771193  破解方法
 3.visual Studio 
