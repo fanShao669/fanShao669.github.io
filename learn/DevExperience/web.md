@@ -22,3 +22,4 @@ https://blog.csdn.net/chuanmin_zhang/article/details/80963474?utm_source=blogxgw
 
 5.今天出现了一个问题：就是数据update的情况下  前端没有传字段或者传null  后端都不更新！！！
 所以注意定义接口的时候注意一下：需要给后端传什么字段，类型  返回数据类型
+
