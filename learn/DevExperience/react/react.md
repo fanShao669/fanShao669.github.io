@@ -24,18 +24,22 @@ oninput 事件在用户输入时触发。
 @1.http://www.runoob.com/jsref/event-oninput.html
 @2.https://blog.csdn.net/freshlover/article/details/39050609
 
-2.在文件中 组件文件名称小写，文件名称首字母大写；
+2.
+在文件中 组件文件名称小写，文件名称首字母大写；
 
-3.react-from-wrappedComponentRef
+3.
+react-from-wrappedComponentRef
 表单验证，如果父组件想要验证子组件中的form表单值，
 以前的做法是，在子组件中拿到form表单值，通过父组件的一个方法拿到这些值，这个看起来可以使用，但是总感觉有点不妥.
 其实可以使用 wrappedComponentRef={(form) => this.offerForm = form}  
 eg 父组件调用BasicInfo， <BasicInfo wrappedComponentRef={(form) => this.offerForm = form} {...totalData} /> 这样就可以获取到BasicInfo中的form表单值；
 
-4.在封装form表单中使用封装组件的话，form表单如何拿到组件中的value值呢？
+4.
+在封装form表单中使用封装组件的话，form表单如何拿到组件中的value值呢？
 其实可以在自己的组件中使用onChange方法就可以解决；form如何能拿到各个值，原因就是ant-design在封装组件的时候会有onChange事件(语言没有组织好)
 
-5.在一次做一个页面， 这个页面是有一张很长的大图和一个button按钮组成（图片自适应，所以img不设置高度）
+5.
+在一次做一个页面， 这个页面是有一张很长的大图和一个button按钮组成（图片自适应，所以img不设置高度）
 我的做法是，把图片切割成多个小图片,然后使用定位吧按钮定位到底部。但是这个时候出现了一个问题。就是每次加载图片的时候，图片还没有加载出来，装载button的div有高度，直接跑到顶部。给用户的感觉就是button按钮一闪一闪的。效果很差。  
 
 处理方法:给button按钮上方的图片加上最小高度就可以解决这个问题
@@ -65,10 +69,12 @@ eg 父组件调用BasicInfo， <BasicInfo wrappedComponentRef={(form) => this.of
 	<img className="u-btn" src={Nine} onClick={(e) => this.Todeliver(e)} />
 </div>
 
-6.react在写style样式的时候  width和height 的值都可以写成数字；   eg:width:100，  解析的时候会解析成px
+6.
+react在写style样式的时候  width和height 的值都可以写成数字；   eg:width:100，  解析的时候会解析成px
 !!! lineHight这样的既可以写px又可以写数字的属性  不可以直接写成数字
 
-7. 在render中 
+7. 
+在render中 
 arr.map((item,index) => {
 	return 
 	<li> 
@@ -83,6 +89,8 @@ arr.map((item,index) => {
 	</li>
 })
 
-8.大文件上传（分片上传）   https://www.jianshu.com/p/0d1421df0e0d
+8.
+大文件上传（分片上传）   https://www.jianshu.com/p/0d1421df0e0d
 
-9.不是同一个页面最好不要使用store  会出现问题
+9.
+不是同一个页面最好不要使用store  会出现问题
