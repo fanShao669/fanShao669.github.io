@@ -33,6 +33,7 @@ https://blog.csdn.net/xiongyouqiang/article/details/80771193  破解方法
 3.visual Studio 
 https://visualstudio.microsoft.com/zh-hans/?rr=https%3A%2F%2Fwww.google.com.hk%2F
 安装工具
+(基础版)
 1.Auto Close Tag
 2.Auto Rename Tag
 3.Beautify
@@ -41,7 +42,39 @@ https://visualstudio.microsoft.com/zh-hans/?rr=https%3A%2F%2Fwww.google.com.hk%2
 6.HTML CSS Support
 7.HTML Snippets
 8.JS JSX Snippets
-
+9.ESLint
+(可以使用)
+10.Bracket Pair Colorizer
+11.cssrem
+12.Debugger for Chrome
+13.Document This
+14.EditorConfig for VS Code
+15.Git History
+16.HTML Class Suggestions
+17.HTML CSS Support
+18.HTML Snippets
+19.HTMLHint
+20.JavaScript(ES6) code snippets
+21.JQuery Code Snippets
+22. JS JSX Snippets
+23.language-stylus
+24.mcss
+25.Node Debug
+26.npm 
+27npm Intellisense
+28.open in browser
+29. Path Intellisense
+30. px to rem
+31React Native Tools
+32.react-beautify
+33.TSLint
+34.Vetur
+35.View in Browser
+36.vscode weapp api
+37.vscode wxml
+38.vscode-icons
+39.vscode-styled-jsx
+40.VueHelper
 
 
 其他工具
