@@ -21,8 +21,8 @@ oninput 事件在用户输入时触发。
 该事件在 <input> 或 <textarea> 元素的值发生改变时触发。
 提示： 该事件类似于 onchange 事件。不同之处在于 oninput 事件在元素值发生变化是立即触发， onchange 在元素失去焦点时触发。另外一点不同是 onchange 事件也可以作用于 <keygen> 和 <select> 元素。
 参考地址:
-1.http://www.runoob.com/jsref/event-oninput.html
-2.https://blog.csdn.net/freshlover/article/details/39050609
+@1.http://www.runoob.com/jsref/event-oninput.html
+@2.https://blog.csdn.net/freshlover/article/details/39050609
 
 2.在文件中 组件文件名称小写，文件名称首字母大写；
 
