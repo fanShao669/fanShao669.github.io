@@ -10,13 +10,18 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor":"#E93330",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath":"image/personal.png",
+        "selectedIconPath": "image/personalActive.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/logs/logs",
+        "iconPath": "image/personal.png",
+        "selectedIconPath": "image/personalActive.png",
         "text": "日志"
       }
     ]

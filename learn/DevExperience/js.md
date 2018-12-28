@@ -32,3 +32,6 @@ for (var i = 0; i < 50000; i++) {
 　　arr.push(i);
 }
 arr.reverse(); //可见，reverse性能极高，甚至于没有额外的消耗，可以放心使用。
+
+4.console.time console.timeEnd (WEB开发人员测量一个javascript脚本程序执行消耗的时间。)
+http://www.webhek.com/post/console-time-console-timeend.html
