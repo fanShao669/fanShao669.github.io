@@ -76,6 +76,14 @@ https://visualstudio.microsoft.com/zh-hans/?rr=https%3A%2F%2Fwww.google.com.hk%2
 39.vscode-styled-jsx
 40.VueHelper
 
+@2  vs -> 文件->首选项->设置-> 输入  search:Follow Symlinks ：false   默认是true  有点卡   设置为falseJuin不是很卡
+
+4 Hbuilder http://dcloud.io/
+
+5.easy-mock (mock数据)
+https://easy-mock.com/login
+
+
 
 其他工具
 1.微信（打开多个微信）

@@ -59,9 +59,11 @@ web性能优化
 36.problem36---@1模块化的异步加载怎样做？@2图片加载完的时候会执行吗？@3window.onload执行时间？等 https://mp.weixin.qq.com/s/PQ0E3UWYLcryXRKdKSg0OQ
 37.problem37---熟悉前后端交互原理，对 HTTP 请求有一定深入的理解, 栈溢出
 38.problem38---js  递归方法等其他方法；   https://www.jianshu.com/p/ca514efd3830
+39.problem39-- 表单提交 (react vue js)
 进阶篇
 1.try/catch 事件
-
+2.网上都说操作真实 DOM 慢，但测试结果却比 React 更快，为什么？            https://www.zhihu.com/question/31809713
+3.SPA -单页应用    single page web application
 
 注意
 1.js基础

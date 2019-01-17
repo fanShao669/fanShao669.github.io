@@ -35,3 +35,15 @@ arr.reverse(); //可见，reverse性能极高，甚至于没有额外的消耗�
 
 4.console.time console.timeEnd (WEB开发人员测量一个javascript脚本程序执行消耗的时间。)
 http://www.webhek.com/post/console-time-console-timeend.html
+
+5.
+document.body.clientHeight  body对象的所有高度
+document.body.offsetHeight  body对象的所有高度
+window.innerHeight   可视高度
+https://www.cnblogs.com/lvdabao/articles/3651779.html
+
+6.
+$0 挺好玩 -是你在elements中设置id的那个div
+
+7. 浅谈Object.prototype.toString.call()方法
+https://www.jianshu.com/p/585926ae62cc

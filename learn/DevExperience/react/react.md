@@ -94,3 +94,28 @@ arr.map((item,index) => {
 
 9.
 不是同一个页面最好不要使用store  会出现问题
+
+10.  React 将字符串解析成HTML的DOM节点
+@1
+<section dangerouslySetInnerHTML={{__html: '<div>1111</div>'}}></section>
+@2 react-html-parser  这个组件是作用如下
+eg：
+import React from 'react';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+ 
+class HtmlComponent extends React.Component {
+  render() {
+    const html = '<div>Example HTML string</div>';
+    return <div>{ ReactHtmlParser(html) }</div>;
+
+
+ 11.
+ 两个循环同时写的时候  例如下面是错误的
+ (value.appendixKey || []).map(item => appendixKeyNosKeys.push(item.nosKey))
+(value.workAppendixKeys || []).map(item => workAppendixKeysNosKeys.push(item.nosKey))
+
+正确的是下面的
+(value.appendixKey || []).map(item => appendixKeyNosKeys.push(item.nosKey));
+(value.workAppendixKeys || []).map(item => workAppendixKeysNosKeys.push(item.nosKey));
+循环结束需要在后面加上';'
+否则会报错如下：proxyConsole.js:56 TypeError: (value.appendixKey || []).map(...) is not a function

@@ -15,6 +15,7 @@ https://blog.csdn.net/chuanmin_zhang/article/details/80963474?utm_source=blogxgw
 6、在所有td和tr标签上添加  style="border: 0px; padding: 0px; margin: 0px;"样式，保证各个浏览器样式统一
 7.邮件不支持html5新特性（eg：section标签）
 8.邮件会默认生成一个style文件；可能会覆盖掉你的样式；（eg:body{margin：0}
+9.写邮件  伪类元素不一定生效（网易-闪电邮不生效）
 参考文档：
 1.https://segmentfault.com/a/1190000008864116 
 2. http://blog.csdn.net/xiaoran606/article/details/7107878
@@ -23,3 +24,19 @@ https://blog.csdn.net/chuanmin_zhang/article/details/80963474?utm_source=blogxgw
 5.今天出现了一个问题：就是数据update的情况下  前端没有传字段或者传null  后端都不更新！！！
 所以注意定义接口的时候注意一下：需要给后端传什么字段，类型  返回数据类型
 
+6. 男女-color
+性别男 #00AAE7
+性别女 #D1098D
+
+7运算符优先级
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+8.今天遇到 微信分享到朋友圈 只有自己可见   这不就尴尬了
+原因： 分享量太大 被微信禁止了 只有自己可以看到自己发的（防止病毒式传播）; 诱导违规
+
+9 打印材料如何分页
+pageBreakBefore = "always"  写在需要分页的样式中
+打印材料中的样式如何写
+@media print {
+	打印中的样式
+}
